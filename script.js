@@ -1,17 +1,11 @@
-let c0 = document.getElementById('0')
-let c1 = document.getElementById('1')
-let c2 = document.getElementById('2')
+let player1 = "background-color: black"
+let player2 = "background-color: blue"
+let round = 1
+let places = [...document.querySelectorAll(".XO")]
+places.forEach(XO => XO.addEventListener("click", choose))
 
-let c3 = document.getElementById('3')
-let c4 = document.getElementById('4')
-let c5 = document.getElementById('5')
-
-let c6 = document.getElementById('6')
-let c7 = document.getElementById('7')
-let c8 = document.getElementById('8')
-
-c0.onclick  function addXO(){}
-
-function addXO () {
-    console.log("0")
+function choose(event){
+    let turn = round % 2 ===0 ? player2 : player1
+    event.target.classList.add(turn)
+    round++
 }
