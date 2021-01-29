@@ -9,7 +9,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    background-image: url("img/karta.png")
 }
 .XO{
     min-height: 98px;
@@ -20,21 +19,22 @@ body{
     padding: 0px;
     margin: 0;
 }
-.XO img{
-    width: 98px;
-    min-height: 98px;
+.XO img {
+    width: 0px;
+    min-height: 0px;
+
 }
 .XO:hover {
     background: #fafafa;
 }
-.X{
+.X0.X{
     min-height: 98px;
     width: 98px;
     text-align: center;
     float: left;
     border: double black 1px;
 }
-.O{
+.XO.O{
     min-height: 98px;
     width: 98px;
     text-align: center;
