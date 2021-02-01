@@ -32,6 +32,8 @@ let round = 1
 function change(nr){
     let turn = round % 2 === 0 ? player2 : player1
     let place = document.getElementById("p"+nr)
-    place.innerHTML=(turn)
+    if(place.textContent===""){
+    place.innerHTML= turn
     round++
+    }
 }
