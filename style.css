@@ -31,3 +31,8 @@ body{
     font-size: 35px;
     margin-left: 10px;
 }
+#logo{
+    color: chartreuse;
+    text-align: center;
+    letter-spacing: 2px;
+}
